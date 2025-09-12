@@ -152,14 +152,15 @@ replace ```<yourname>``` with *your* name and without angle brackets, do you?)
 
 ## After preparatory work
 
-Splendid, you come so far to save the ```init.el``` file I provide here in
+Splendid, you came so far to save the ```init.el``` file I provide here in
 ```.emacs.d``` (**not** in ```.emacs.d/slime-contribs```).
 
-Windows user: Open the ```init.el``` with another editor than
-*Emacs*. Everything behind a semicolon is a comment *for you*. **Windows**
-users: You probably will replace any slashes ```/``` in pathnames with
-backslashes ```\```.  As for the rest: upcoming questions could be answered by
-the comments. 
+Open the ```init.el``` with another editor than *Emacs*. Everything behind a
+semicolon is a comment *for you*. 
+
+**Windows** users: You probably now want to replace any slashes ```/``` in
+pathnames with backslashes ```\```.  As for the rest: upcoming questions could
+be answered by the comments. 
 
 Now, you start *Emacs* again.
 
@@ -173,4 +174,4 @@ the **mini buffer**.
 
 If everything works out, than your Emacs should look similar to this:
 
-[Emacs](Emacs-start.png)
+![Emacs](Emacs-start.png)
