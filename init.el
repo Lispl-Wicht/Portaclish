@@ -6,21 +6,22 @@
 (defvar emacs-d "/.emacs.d")
 
 ;;  Common Lisp (CL) Implementations
-(defvar sbcl-default-path "/usr/local/lib/sbcl-2.3.8/bin/sbcl")
-(defvar sbcl-4g-path "/usr/local/lib/sbcl-2.5.7/bin/sbcl")
-(defvar ecl-path "/usr/bin/ecl")
-(defvar ccl-path (concat home-root "/bin"
-                         "/ccl-1.11.5-linuxx86/ccl/lx86cl64"))
-(defvar acl-path (concat home-root "/bin"
-                         "/AllegroCL/acl11.0express.64/alisp"))
-(defvar abcl-path "/usr/bin/abcl")
+;; (defvar sbcl-default-path "/usr/local/lib/sbcl-2.3.8/bin/sbcl")
+;; (defvar sbcl-4g-path "/usr/local/lib/sbcl-2.5.7/bin/sbcl")
+;; (defvar ecl-path "/usr/bin/ecl")
+;; (defvar ccl-path (concat home-root "/bin"
+;;                          "/ccl-1.11.5-linuxx86/ccl/lx86cl64"))
+;; (defvar acl-path (concat home-root "/bin"
+;;                          "/AllegroCL/acl11.0express.64/alisp"))
+;; (defvar abcl-path "/usr/bin/abcl")
 
-(defvar cl-default "/usr/bin/sbcl") ; replace, if only one CL implementation is used 
+(defvar cl-default "/usr/bin/sbcl") ; adjust it to your system
+;; and if you want to use more implementations, remove the path
+;; here and leave the empty string "" instead. 
+
 (defvar custom-slime-contribs (concat home-root
-                                     emacs-d
-                                     "/slime-contribs"))
-
-;;(defvar slime-contribs "/home/jochen/.emacs.d/elpa/slime-20250904.1610/contrib")
+                                      emacs-d
+                                      "/slime-contribs"))
 
 ;;  Project folders
 (defvar cl-projects (concat home-root
@@ -474,7 +475,7 @@
 ;;; ------------------------------
 ;;; Start Emacs as Common Lisp IDE
 ;;; ------------------------------
-(cd "~/quicklisp/local-projects")
+(cd "~/quicklisp/local-projects") ;; adjust it to your system
 (slime)
 (neotree)
 (other-window 1)
