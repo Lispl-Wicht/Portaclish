@@ -53,7 +53,7 @@ package management.
 
 ### 2. Install a Common Lisp implementation
 
-The quasi-standard free implementation is [SBCL (Steel Bank Common
+The arguably most frequently used free implementation is [SBCL (Steel Bank Common
 Lisp)](https://www.sbcl.org/). 
 
 - Linux/macOS: use your package manager.
@@ -80,6 +80,12 @@ after the Asterisk:
 ```
 
 And you’re out again. 🎉
+
+> *Common Lisp* is a programming language defined by the comprehensive **ANSI
+> Common Lisp** standard. SBCL is one implementation of this standard -- there are
+> others too. Each implementation often adds its own non-standard extensions, and
+> some only partially follow the standard. SBCL, however, is ANSI compliant and
+> known for its speed. 
 
 ### 3. Install cURL (probably already there)
 
@@ -122,6 +128,10 @@ After the installation process is finished, enter:
 Now SBCL will always start with Quicklisp loaded, and you can leave the REPL
 again with ```(quit)```. 
 
+> Quicklisp is the de-facto package manager for Common Lisp. It downloads and
+> installs libraries, keeps track of dependencies, and makes it easy to share and
+> load code — much like pip in Python or npm in JavaScript.
+
 ### 5. Start vanilla (unconfigured) Emacs
 
 Open Emacs the usual way (icon or terminal).
@@ -155,6 +165,11 @@ Restart Emacs. It should:
 * Switch to dark mode.
 * Open with ```scratch``` buffer + SLIME REPL + file manager (toggle with
   ```<F8>```). 
+  
+> SLIME stands for Superior Lisp Interaction Mode for Emacs. Think of it as a
+> “remote control” for Common Lisp: it enhances the REPL to be much more
+> comfortable, and even lets you run and manage several Lisp instances in
+> parallel.
 
 If everything worked, Emacs should look something like this:
 
