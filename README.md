@@ -8,6 +8,13 @@ asleep](https://www.reddit.com/r/Common_Lisp/comments/uphlgw/is_portacle_being_m
 This is less of an issue. It just needed to be there as a helpful inspiration of
 how to configure *Emacs* useful as an Integrated Development Envirenment (IDE).
 
+Meanwhile, [Shinmera](https://shinmera.com/) advanced their own Emacs configuration. So, 
+professionals and amibitious amateurs may want to checkout 
+[this](https://codeberg.org/shinmera/.emacs).
+
+For beginners, this might be a bit too complex. Thus, for pedagogical purposes, and less
+advanced needs, this configuration here is meant to be a useful starting point.
+
 The provided ```init.el``` is surely optimisable, but it works -- at least on my
 system (Debian Linux). All necessary packages are loaded and configured with
 ```use-package```. This approach does not result in one system on an USB stick
@@ -88,9 +95,9 @@ from [here](https://curl.se/windows/). **But don't install it right now. It
 should be preinstalled in your system.** Only if the system tells you soon, that
 it doesn't know how to **curl**, you have this information as backup.
 
-**Now we proceed with installing the quasi-standard *library manager* of *Common
+**Now** we proceed with installing the quasi-standard *library manager* of *Common
 Lisp*: [Quicklisp](https://www.quicklisp.org/beta/). The linked website
-describes the necessary steps how they look like on macOS, Unix, and Linux.  It
+describes the necessary steps -- how they look like on macOS, Unix, and Linux.  It
 should be nearly the same in a Windows console.
 
 If you have troubles in getting the file ```quicklisp.lisp```, then just
@@ -115,8 +122,12 @@ system.  So, at the asterisk of the REPL enter:
 ```
 
 You will see a lot of messages.  They should just pass through so that you
-finally see ```==== quicklisp installed ====```, followed by a couple of hints.
-One hint is important, now.  Again, enter at the REPL prompt:
+finally see 
+
+```==== quicklisp installed ====``` 
+
+followed by a couple of hints. One hint is important at this stage.  Again, 
+enter at the REPL prompt:
 
 ```
 * (ql:add-to-init-file)
@@ -125,10 +136,10 @@ One hint is important, now.  Again, enter at the REPL prompt:
 After this expression is effectively evaluated, ```sbcl``` always starts with
 the library manager *Quicklisp*.  Now, you can again ```quit``` the REPL.
 
-** Now, it is time to start a vanilla, unconfigured *Emacs*.***
+**Now, it is time to start a vanilla, unconfigured *Emacs*.**
 
-You should find it in the regular way of your Desktop Environment as an icon
-starter to click. 
+You should find the starter icon in the regular way of your Desktop 
+Environment. 
 
 After *Emacs* is loaded, just use your first *Emacs* **keychord**!  Push
 ```Ctrl``` together with ```x```, leave your finger on ```Ctrl``` and push
@@ -147,7 +158,7 @@ correspondingly in ```C:\Users\<yourname>\.emacs.d```, or in
 source](https://www.reddit.com/r/emacs/comments/1110smx/help_with_setting_up_emacs_on_windows/). (You
 replace ```<yourname>``` with *your* name and without angle brackets, do you?)
 
-**In this directory***,  you create a subdirectory *in* ```.emacs.d``` called
+**In this directory**,  you create a subdirectory *in* ```.emacs.d``` called
 ```slime-contribs```. 
 
 ## After preparatory work
