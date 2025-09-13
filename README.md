@@ -6,7 +6,7 @@ A simple `init.el` script for preconfiguring **Emacs** as a Common Lisp IDE —
 
 The original *Portable Common Lisp Environment* project has [fallen
 asleep](https://www.reddit.com/r/Common_Lisp/comments/uphlgw/is_portacle_being_maintained/)
-and now
+and is now
 [abandoned](https://mastodon.social/@miguel@lemmy.ml/115097648782234707), 
 but its ideas remain helpful. Portaclish takes up this inspiration and shows how
 to configure **Emacs** into a comfortable Integrated Development Environment (IDE). 
