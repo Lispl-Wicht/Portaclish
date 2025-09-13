@@ -146,8 +146,8 @@ for a further step below. You can leave the REPL again with ```(quit)```.
 Open Emacs the usual way (icon or terminal).
 Quit it with your **first Emacs keychord**: ```C-x C-c```
 
->> ```C-``` means: *Hold ```<Ctrl>```*. The small letters reference the
->> corresponding keys ```<x>``` and ```<c>```.
+> ```C-``` means: *Hold ```<Ctrl>```*. The small letters reference the
+> corresponding keys ```<x>``` and ```<c>```.
 
 Find the configuration directory:
 
