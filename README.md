@@ -145,14 +145,15 @@ for a further step below. You can leave the REPL again with ```(quit)```.
 
 Open Emacs the usual way (icon or terminal).
 Quit it with your **first Emacs keychord**: ```C-x C-c```
-(```C-``` means: *Hold ```<Ctrl>```*. The small letters reference the
-corresponding keys ```<x>``` and ```<c>```.) 
+
+>> ```C-``` means: *Hold ```<Ctrl>```*. The small letters reference the
+>> corresponding keys ```<x>``` and ```<c>```.
 
 Find the configuration directory:
 
 * Linux/Unix/macOS: ```~/.emacs.d```
 * Windows (usually): ```C:\Users\<yourname>\.emacs.d\``` or
-  ```C:/Users/<yourname>/AppData/Roaming/.emacs.d/``` 
+  ```C:\Users\<yourname>\AppData\Roaming\.emacs.d/``` 
 
 Inside ```emacs.d``` create the subdirectory ```slime-contribs```.
 
