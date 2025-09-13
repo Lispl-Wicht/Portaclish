@@ -122,15 +122,24 @@ Then inside the REPL enter first:
 After the installation process is finished, enter:
 
 ```
+* (ql:quickload "quicklisp-slime-helper")
+```
+
+and follow the instructions it displays.
+
+Finally, enter this expression:
+
+```
 * (ql:add-to-init-file)
 ```
 
-Now SBCL will always start with Quicklisp loaded, and you can leave the REPL
-again with ```(quit)```. 
+Now SBCL will always start with Quicklisp loaded which is already preconfigured
+for a further step below. You can leave the REPL again with ```(quit)```. 
 
 > Quicklisp is the de-facto package manager for Common Lisp. It downloads and
 > installs libraries, keeps track of dependencies, and makes it easy to share and
 > load code — much like pip in Python or npm in JavaScript.
+
 
 ### 5. Start vanilla (unconfigured) Emacs
 
