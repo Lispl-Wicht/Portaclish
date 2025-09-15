@@ -24,7 +24,7 @@ The provided `init.el` is surely optimisable, but it works — at least on my sy
 
 If you’re impatient:  
 
-1. Install **Emacs** and **SBCL** (Steel Bank Common Lisp).  
+1. Install **Emacs**, **Git** and **SBCL** (Steel Bank Common Lisp).  
 2. Download [Quicklisp](https://www.quicklisp.org/beta/) and install it into SBCL.  
 3. Drop this repo’s `init.el` into your `~/.emacs.d/` (or equivalent on Windows).  
 4. Start Emacs → it will auto-install everything and open ready for Lisp.  
@@ -43,7 +43,7 @@ If you already know what to do with the source code, feel free to skip ahead.
 ### 1. Install Emacs  
 
 - [Download Emacs](https://www.gnu.org/software/emacs/) according to your OS.  
-- [Windows 11 install guide](https://lucidmanager.org/productivity/emacs-windows/) (similar for Windows 10).  
+- [Windows 10 install guide](emacs-sbcl-windows.md) (similar for Windows 11).  
 - [GNU instructions for
 Windows/macOS](https://www.gnu.org/software/emacs/download.html#nonfree).  
 - Linux/macOS: use your package manager (e.g. `apt` on Debian/Ubuntu).  
@@ -54,7 +54,7 @@ macOS users can also use:
 
 Windows users might also try the [Windows Subsystem for Linux
 (WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) for smoother
-package management. 
+package management within Ubuntu or a Linux Distribution of your choice (if it works). 
 
 ---
 
@@ -67,7 +67,8 @@ Lisp)](https://www.sbcl.org/).
 - macOS: [MacPorts](https://ports.macports.org/port/sbcl/) or
   [Homebrew](https://formulae.brew.sh/formula/sbcl).
 - Windows: [download the binary from
-SourceForge](https://sourceforge.net/projects/sbcl/files/sbcl/). 
+SourceForge](https://sourceforge.net/projects/sbcl/files/sbcl/) *and mind the
+[further steps](emacs-sbcl-windows.md)). 
 
 Now test your installation by starting it in a terminal:
 
@@ -103,22 +104,32 @@ On most systems ```curl```is preinstalled. If not:
 * Linux: distribution's package manager.
 * Windows: [download here](https://curl.se/windows/)
 
-### 4. Install Quicklisp (the Common Lisp library manager)
+### 4. Install Git (a frequently used version manager)
+
+* macOS: [MacPorts](https://ports.macports.org/port/git/),
+  [Homebrew](https://formulae.brew.sh/formula/git).
+* Linux: distribution's package manager.
+* Windows: [download here](https://git-scm.com/download/win).
+
+### 5. Install Quicklisp (the Common Lisp library manager)
 
 Follow the steps on the [Quicklisp site](https://www.quicklisp.org/beta/). In
 short: 
 
-Download [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) and 
-[quicklisp.asc](https://beta.quicklisp.org/quicklisp.lisp.asc) with
+Download [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) with
 ```curl```into your home directory.  
 
-Verify ```quicklisp.lisp``` with ```quicklisp.asc``` using ```gpg``` on the console. 
+**Savely skip** the verification of ```quicklisp.lisp``` with
+```quicklisp.asc``` using ```gpg``` oas described on the Quicklisp website. 
 
 And then load ```sbcl``` by passing ``` quicklisp.lisp``` to it:
 
 ```
 $ sbcl --load quicklisp.lisp
 ```
+
+In Windows, it is a bit more cumbersome. Mind the [further steps](emacs-sbcl-windows.md). 
+
 
 Then inside the REPL enter first:
 
@@ -148,7 +159,7 @@ for a further step below. You can leave the REPL again with ```(quit)```.
 > load code — much like pip in Python or npm in JavaScript.
 
 
-### 5. Start vanilla (unconfigured) Emacs
+### 6. Start vanilla (unconfigured) Emacs
 
 Open Emacs the usual way (icon or terminal).
 Quit it with your **first Emacs keychord**: ```C-x C-c```
@@ -159,21 +170,18 @@ Quit it with your **first Emacs keychord**: ```C-x C-c```
 Find the configuration directory:
 
 * Linux/Unix/macOS: ```~/.emacs.d```
-* Windows (usually): ```C:\Users\<yourname>\.emacs.d\``` or
-  ```C:\Users\<yourname>\AppData\Roaming\.emacs.d\``` 
+* Windows: ```C:\Users\<yourname>\AppData\Roaming\.emacs.d\``` 
 
-Inside ```emacs.d``` create the subdirectory ```slime-contribs```.
+Inside ```.emacs.d``` create the subdirectory ```slime-contribs```.
 
-### 6. Save the ```init.el```
+### 7. Save the ```init.el```
 
 * Put the provided ```init.el``` into ```~/.emacs.d/``` (***not***
   ```~/.emacs.d/slime-contribs```). 
-* Open it with another editor (not Emacs yet).
-* Notice the comments (```;``` introduces them).
+* 👉 **Windows users!!!** Take ```init.el-windows``` instead, rename it to ```init.el```
+  and **mind the [further steps](emacs-sbcl-windows.md).
 
-👉 Windows users: replace ```/``` in pathnames with ```\```.
-
-### 7. Run Emacs with *portaclish* flavour:
+### 8. Run Emacs with *portaclish* flavour:
 
 Restart Emacs. It should:
 
