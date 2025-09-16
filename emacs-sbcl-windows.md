@@ -89,7 +89,7 @@ And we enter only the things that *follow* this prompt sign.
 > * Calling the local ```sbcl``` like this works, because ```AppData``` is a subdirectory
 >   of ```C:\Users\YourUserName```.  So, we can use the *relative* path from there, and
 >   do not need to call the *full* path to ```sbcl```:
->   ```C:\Users\YourUserName\AppData\Local\Programs\sbcsl-2.x\sbcl```.
+>   ```C:\Users\YourUserName\AppData\Local\Programs\sbcl-2.x\sbcl```.
   
 5. At the appearing prompt **of SBCL** we enter ```(quit)``` and leave SBCL
    again.
