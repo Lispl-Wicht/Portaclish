@@ -208,7 +208,7 @@ C:\Users\YourUserName\AppData\Roaming\.emacs.d
    ;;;; And replace 'sbcl-2.5' with the directory name *you* have chosen!!!
    ```
    
-   which refer to the **two* paths in the following expression:
+   which refer to the **two** paths in the following expression:
    
    ```
    '((sbcl ("c:/Users/yourUserName/AppData/local/Programs/sbcl-2.5/sbcl.exe"
