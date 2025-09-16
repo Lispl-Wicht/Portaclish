@@ -291,17 +291,18 @@ Ok, and why an additional local copy of SBCL, again?
 
 * I did not find a way how to convince Emacs to handle pathnames that contain
   space characters in the ```init.el```.  The suggested ideas with masked
-  backslashes did not work out. 
-* But to use the subdirectory ```Local\Programs\sbcl-2.5``` has a big advantage
-  anyway:  It is more convenient to change to that directory in the first place.
-* To keep the global installation allows to start it also from the start menu,
-  which also could become convenient, if Emacs later will be connected to that
-  instance as well.
-* *Git* is not needed necessarily. But the ```init.el``` also uses the package
-  ```Magit``` the *Emacs* interface to *Git*.  And besides the future
-  convenience, the absence of *Git* would result in an unnecessary error message.
+  backslashes did not work out.
 * Finding the correct Windows path entries for SBCL needed quite an
   uncomfortable time of tinkering with several variations. I am glad, that this was
   mentioned at Stackoverflow or so in a comment. It is also a good model for
   adding further *Common Lisp* implementations on Windows. It is only important,
   that the pathnames are correctly modified to the own system (5. of the last section).
+* But to use the subdirectory ```Local\Programs\sbcl-2.5``` has a big advantage
+  anyway:  It is more convenient to change to that directory in the first place.
+* To keep the global installation allows to start it also from the start menu,
+  which also could become convenient, if Emacs later will be connected to that
+  instance as well.
+* *Git* by the way is not needed necessarily. But the ```init.el``` also uses the package
+  ```Magit``` the *Emacs* interface to *Git*.  And besides the future
+  convenience, the absence of *Git* would result in an unnecessary error message.
+
