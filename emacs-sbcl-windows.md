@@ -122,6 +122,9 @@ Our shell now will look quite similar to this:
 >..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
+> **Notice:** ```..\``` at the beginning of this call to ```sbcl``` means, that we move *one* level
+> up to ```AppData```, and from there we enter the other subdirectory ```Local``` again. 
+
 4. *At the SBCL prompt*, we enter (*after* the ```*```):
 
 ```
