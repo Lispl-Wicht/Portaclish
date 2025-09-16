@@ -31,15 +31,15 @@ pitfalls.
    
 ![local-empty](sbcl-local-programs-empty.png)
    
-5. By pressing ```Ctrl+n``` (or in Emacs notation: ```C-n```), we open a new
+5. By pressing ```Ctrl```+```n``` (or in Emacs notation: ```C-n```), we open a new
    file explorer window. There, we navigate to ```C:\Program Files\Steel Bank
-   Common Lisp```. And we *copy* that *directory* with ```Ctrl+c```
+   Common Lisp```. And we *copy* that *directory* with ```Ctrl```+```c```
    (i.e. ```C-c```).
    
 ![SBCL-global](sbcl-global.png)
    
 6. We click into our first file explorer window with
-   ``````C:\Users\YourUserName\AppData\Local\Programs```, and insert the copy
+   ```C:\Users\YourUserName\AppData\Local\Programs```, and insert the copy
    with ```Ctrl+v``` (i.e. ```C-v```).
 7. We *rename* this subdirectory from ```Steel Bank Common Lisp``` to something like 
    ```sbcl-2.x``` (according to the downloaded version of SBCL).
