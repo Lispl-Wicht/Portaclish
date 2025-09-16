@@ -298,7 +298,7 @@ Ok, and why an additional local copy of SBCL, again?
   which also could become convenient, if Emacs later will be connected to that
   instance as well.
 * *Git* is not needed necessarily. But the ```init.el``` also uses the package
-  ```Magit````the *Emacs* interface to *Git*.  And besides the future
+  ```Magit``` the *Emacs* interface to *Git*.  And besides the future
   convenience, the absence of *Git* would result in an unnecessary error message.
 * Finding the correct Windows path entries for SBCL needed quite an
   uncomfortable time of tinkering with several variations. I am glad, that this was
