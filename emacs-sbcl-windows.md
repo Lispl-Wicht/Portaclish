@@ -151,6 +151,7 @@ Our shell now will look quite similar to this:
 >move .sbclrc ..\..
 ```
 
+
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
    
@@ -179,7 +180,7 @@ looks like this:
     (load quicklisp-init)))
 ```
 
-9. We save the file and exit ```notepad```.
+10. We save the file and exit ```notepad```.
 
 
 ## 5. Installing Emacs and starting it for the first time and adding a subdirectory
