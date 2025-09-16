@@ -71,7 +71,7 @@ Lisp)](https://www.sbcl.org/).
 - macOS: [MacPorts](https://ports.macports.org/port/sbcl/) or
   [Homebrew](https://formulae.brew.sh/formula/sbcl).
 - Windows: [download the binary from
-SourceForge](https://sourceforge.net/projects/sbcl/files/sbcl/) *and mind the
+SourceForge](https://sourceforge.net/projects/sbcl/files/sbcl/) *and* mind the
 [further steps](emacs-sbcl-windows.md)). 
 
 Now test your installation by starting it in a terminal:
@@ -124,7 +124,8 @@ Download [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) with
 ```curl```into your home directory.  
 
 **Savely skip** the verification of ```quicklisp.lisp``` with
-```quicklisp.asc``` using ```gpg``` oas described on the Quicklisp website. 
+```quicklisp.asc``` using ```gpg``` -- although it is recommended on the
+Quicklisp website (the result seems pointless here).
 
 And then load ```sbcl``` by passing ``` quicklisp.lisp``` to it:
 
