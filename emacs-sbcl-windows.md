@@ -79,7 +79,7 @@ And we enter only the things that *follow* this prompt sign.
 4. In the current directory we enter:
 
 ```
->Local\Programs\sbcl-2.x\sbcl
+>AppData\Local\Programs\sbcl-2.x\sbcl
 ```
 
 **Notice:** 
@@ -117,7 +117,7 @@ Our shell now will look quite similar to this:
    and the ```--load``` option at the end):
 
 ```
->..\..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
+>..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
 4. *At the SBCL prompt*, we enter (*after* the ```*```):
