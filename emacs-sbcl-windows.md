@@ -166,7 +166,7 @@ The original content looks like this:
     (load quicklisp-init)))
 ```
 
-We modify the pathname after ```merge-pathname```, so that the whole expression
+We modify the pathname after ```merge-pathnames```, so that the whole expression
 looks like this:
 
 ```
