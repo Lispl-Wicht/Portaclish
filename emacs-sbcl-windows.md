@@ -183,7 +183,7 @@ looks like this:
 10. We save the file and exit ```notepad```.
 
 
-## 5. Installing Emacs and starting it for the first time and adding a subdirectory
+## 5. Installing Emacs, starting it for the first time, and adding a subdirectory
 
 1. We either visit a [GNU Emacs FTP Mirror
    nearby](http://ftpmirror.gnu.org/emacs/windows) -- which is recommended. Or,
@@ -226,7 +226,7 @@ After executing that file, *Emacs* will be installed into
 
 ![download](init_el-windows-download.png)
 3. With the file explorer, we move that file from our download directory into the
-   *Emacs* configuration directory
+   *Emacs* configuration directory:
 
 ```
 C:\Users\YourUserName\AppData\Roaming\.emacs.d
