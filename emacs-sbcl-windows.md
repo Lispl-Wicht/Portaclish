@@ -287,6 +287,10 @@ What have we done?
   Home dir. And, to modify that configuration file so that it names the
   *Quicklisp* installation in the *Emacs* Home dir -- like we've did in the 4th
   section step 9.
+* If this turns out to be a less favourable decision in general, it easily can
+  be modified: Just copy, or move the ```quicklisp``` subdirectory into the
+  *Windows* Home dir, and modify the ```#-quicklisp```-entry in ```.sbclrc```
+  correspondingly again. 
   
 Ok, and why an additional local copy of SBCL, again?
 
@@ -299,10 +303,6 @@ Ok, and why an additional local copy of SBCL, again?
   adding further *Common Lisp* implementations on Windows. It is only important,
   that the pathnames are correctly modified to the own system (step 5 of the 6th
   section).
-* If this turns out to be a less favourable decision in general, it easily can
-  be modified: Just copy, or move the ```quicklisp``` subdirectory into the
-  *Windows* Home dir, and modify the ```#-quicklisp```-entry in ```.sbclrc```
-  correspondingly. 
 * But to use the subdirectory ```Local\Programs\sbcl-2.5``` has a big advantage
   anyway:  It is more convenient to change to that directory in the first place.
 * To keep the global installation allows to start it also from the start menu,
