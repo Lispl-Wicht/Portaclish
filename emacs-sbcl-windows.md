@@ -156,7 +156,7 @@ Our shell now will look quite similar to this:
 >move .sbclrc ..\..
 ```
 > **Notice:** The end of this line -- ```..\..``` -- means, that ```.sbclrc``` 
-> is moved two levels up to ```C:\Users\YourUserName```.
+> is ```move```d two levels up to ```C:\Users\YourUserName```.
 
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
