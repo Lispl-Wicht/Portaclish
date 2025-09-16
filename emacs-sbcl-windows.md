@@ -221,4 +221,4 @@ If everything works -- like it did in my case (after long hours of try, error an
 search  in my personal Nemesis Windows) --
 the result should look similar to this, after a while of downloading and configuring:
 
-![Emacs finished](emacs-finished.png)
+![Emacs finished](Emacs-finished.png)
