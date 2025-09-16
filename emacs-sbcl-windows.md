@@ -113,8 +113,11 @@ Our shell now will look quite similar to this:
 >cd AppData\Roaming
 ```
 
+3. Then we start SBCL again with an argument (mind the dots at the beginning
+   and the ```--load``` option at the end):
+
 ```
->..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
+>..\..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
 3. *At the SBCL prompt*, we enter (*after* the ```*```):
