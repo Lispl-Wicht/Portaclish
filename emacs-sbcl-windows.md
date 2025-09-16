@@ -82,12 +82,12 @@ And we enter only the things that *follow* this prompt sign.
 >AppData\Local\Programs\sbcl-2.x\sbcl
 ```
 
-**Notice:** 
-* Again: **Do not** enter the ```>```.
-* Replace ```sbcl-2.x``` with the local sbcl directory name you chose
-  above.
-* Calling the local ```sbcl``` like this works, because ```AppData``` is a subdirectory
-  of ```C:\Users\YourUserName```.  So, we can use the *relative* path from there.
+> **Notice:** 
+> * Again: **Do not** enter the ```>```.
+> * Replace ```sbcl-2.x``` with the local sbcl directory name you chose
+>   above.
+> * Calling the local ```sbcl``` like this works, because ```AppData``` is a subdirectory
+>   of ```C:\Users\YourUserName```.  So, we can use the *relative* path from there.
   
 5. At the appearing prompt **of SBCL** we enter ```(quit)``` and leave SBCL
    again.
@@ -152,8 +152,8 @@ Our shell now will look quite similar to this:
 ```
 >move .sbclrc ..\..
 ```
-**Notice:** The end of this line -- ```..\..``` -- means, that ```.sbclrc``` 
-is moved two levels up to ```C:\Users\YourUserName```.
+> **Notice:** The end of this line -- ```..\..``` -- means, that ```.sbclrc``` 
+> is moved two levels up to ```C:\Users\YourUserName```.
 
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
@@ -278,7 +278,6 @@ What have we done?
 * The configuration file ```.sbclrc``` is searched by SBCL in the users
   *Windows* Home directory, which is ```C:\Users\YourUserName```.  This
   directory is the *return value* of the *Common Lisp* function
-  ```(user-homedir-pathname)```. -- If we want SBCL to load quicklisp 
   at startup, this file needs to be there.
 * *Emacs* instead treats ```C:\Users\YourUserName\AppData\Roaming``` as Home. If
   we work in that environment, it is more convenient if Quicklisp is also in the
