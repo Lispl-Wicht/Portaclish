@@ -86,6 +86,8 @@ And we enter only the things that *follow* this prompt sign.
 * Again: **Do not** enter the ```>```.
 * Replace ```sbcl-2.x``` with the local sbcl directory name you chose
   above.
+* Calling the local ```sbcl``` like this works, because ```AppData``` is a subdirectory
+  of ```C:\Users\YourUserName```.  So, we can use the *relative* path from there.
   
 5. At the appearing prompt **of SBCL** we enter ```(quit)``` and leave SBCL
    again.
@@ -145,12 +147,11 @@ Our shell now will look quite similar to this:
 * (quit)
 ```
 
-8.At the *command prompt*, we enter this line
+8.At the *command prompt*, we enter this line:
 
 ```
 >move .sbclrc ..\..
 ```
-
 
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
