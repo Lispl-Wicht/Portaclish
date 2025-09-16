@@ -141,17 +141,19 @@ Our shell now will look quite similar to this:
 * (ql:add-to-init-file)
 ```
 
-7.We quit SBCL again:
+7. We quit SBCL again:
 
 ```
 * (quit)
 ```
 
-8.At the *command prompt*, we enter this line:
+8. At the *command prompt*, we enter this line:
 
 ```
 >move .sbclrc ..\..
 ```
+**Notice:** The end of this line -- ```..\..``` -- means, that ```.sbclrc``` 
+is moved two levels up to ```C:\Users\YourUserName```.
 
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
