@@ -120,38 +120,38 @@ Our shell now will look quite similar to this:
 >..\..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
-3. *At the SBCL prompt*, we enter (*after* the ```*```):
+4. *At the SBCL prompt*, we enter (*after* the ```*```):
 
 ```
 * (quicklisp-quickstart-install)
 ```
 
-4. After the installation is complete, we enter:
+5. After the installation is complete, we enter:
 
 ```
 * (ql:quickload "quicklisp-slime-helper")
 ```
 
-5. After this process is finished, we ensure *Quicklisp* to be permanently
+6. After this process is finished, we ensure *Quicklisp* to be permanently
    loaded with SBCL:
    
 ```
 * (ql:add-to-init-file)
 ```
 
-6.We quit SBCL again:
+7.We quit SBCL again:
 
 ```
 * (quit)
 ```
 
-7.At the *command prompt*, we enter this line
+8.At the *command prompt*, we enter this line
 
 ```
 >copy .sbclrc ..\..
 ```
 
-8. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
+9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
    ```.sbclrc``` with the ```notepad``` editor.
    
 The original content looks like this:
