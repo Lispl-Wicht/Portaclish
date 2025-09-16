@@ -1,13 +1,13 @@
 # Prepare the environment in Windows for configuring the portaclish Emacs IDE
 
-Windows, as an operating system that aims to keep things simple for the end-user
-behaves a bit clumsy, if you want to use it in a Unix/Linux like way.
+Windows is designed to feel simple for end-users, but this often makes it clumsy
+when you want to use it in a Unix/Linux-like way.
+To ensure a smooth connection between Emacs and SBCL, we need to do a bit of
+setup first. 
 
-Thus, to get things out of our way there, we have to do a bit more preparatory
-work for a smooth Emacs-SBCL connection, in the first place.
-
-Again, this guide is written for beginners, thus some informations might appear
-too cumbersome for experienced users.
+This guide is written with beginners in mind. Some explanations may feel overly
+detailed if you are experienced — but the extra clarity helps avoid common
+pitfalls. 
 
 ## 1. Install Steel Bank Common Lisp (SBCL) and localise it
 
@@ -17,7 +17,7 @@ too cumbersome for experienced users.
    ```C:\Program Files\Steel Bank Common Lisp```. 
 2. Path names with spaces make troubles in our *Emacs* configuration.  That's why we
    **make a copy** of this directory in our ```Users``` directory.
-   To achieve this, we open the file manager and let us display hidden files
+   To achieve this, we open the file explorer and let us display hidden files
    and directories first.  Therefore, we click the ```View``` tab and check the
    ```Hidden items``` box.
    
@@ -32,13 +32,13 @@ too cumbersome for experienced users.
 ![local-empty](sbcl-local-programs-empty.png)
    
 5. By pressing ```Ctrl+n``` (or in Emacs notation: ```C-n```), we open a new
-   file manager window. There, we navigate to ```C:\Program Files\Steel Bank
+   file explorer window. There, we navigate to ```C:\Program Files\Steel Bank
    Common Lisp```. And we *copy* that *directory* with ```Ctrl+c```
    (i.e. ```C-c```).
    
 ![SBCL-global](sbcl-global.png)
    
-6. We click into our first file manager window with
+6. We click into our first file explorer window with
    ``````C:\Users\YourUserName\AppData\Local\Programs```, and insert the copy
    with ```Ctrl+v``` (i.e. ```C-v```).
 7. We *rename* this subdirectory from ```Steel Bank Common Lisp``` to something like 
@@ -47,6 +47,12 @@ too cumbersome for experienced users.
 ![SBCL-local](sbcl-local-programs-sbcl.png)
 
 ## 2. Start the local SBCL from the *Emacs home directory*
+
+> **Note on prompts:**
+> In this guide, lines starting with ```>``` show the Windows command prompt.
+> Lines starting with ```*``` show the SBCL prompt.
+> Do not type the prompt symbol itself -- only what follows it.
+> (However, I will mention it again at the respective positions.)
 
 1. We press the so-called "Windows" key. Now, we enter ```cmd``` for the
    *command prompt* -- also called *shell*, or *console*, or *terminal*.
@@ -106,7 +112,7 @@ Our shell now will look quite similar to this:
 
 1. We download the file
    [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) and move it with
-   our file manager into ```C:\Users\YourUserName\AppData\Roaming```.
+   our file explorer into ```C:\Users\YourUserName\AppData\Roaming```.
 2. **In our shell** we enter:
 
 ```
@@ -129,7 +135,7 @@ Our shell now will look quite similar to this:
    loaded with SBCL:
    
 ```
-* (ql:add-to-init.file)
+* (ql:add-to-init-file)
 ```
 
 6. Finally, we quit SBCL again:
@@ -180,7 +186,7 @@ After executing that file, *Emacs* will be installed into
 2. We click the download button, marked red below:
 
 ![download](init_el-windows-download.png)
-3. With the file manager, we move that file from our download directory into the
+3. With the file explorer, we move that file from our download directory into the
    *Emacs* configuration directory
 
 ```
@@ -214,7 +220,7 @@ C:\Users\YourUserName\AppData\Roaming\.emacs.d
    ```\```.  So, in *Emacs* the Unix convention can be applied.  (If you insist
    in using backslashes, you need *to mask* them with an additional one: ```\\```.
 6. Now, save the file and exit.
-7. **Rename** the file into ```init.el``` within the file manager.
+7. **Rename** the file into ```init.el``` within the file explorer.
 8. Start *Emacs* and wait.
 
 If everything works -- like it did in my case (after long hours of try, error and
