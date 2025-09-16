@@ -119,7 +119,7 @@ Our shell now will look quite similar to this:
 >..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
-3. *At the SCBL prompt*, we enter (*after* the ```*```):
+3. *At the SBCL prompt*, we enter (*after* the ```*```):
 
 ```
 * (quicklisp-quickstart-install)
