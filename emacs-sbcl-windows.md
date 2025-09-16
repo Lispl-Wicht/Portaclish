@@ -148,7 +148,7 @@ Our shell now will look quite similar to this:
 8.At the *command prompt*, we enter this line
 
 ```
->copy .sbclrc ..\..
+>move .sbclrc ..\..
 ```
 
 9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
