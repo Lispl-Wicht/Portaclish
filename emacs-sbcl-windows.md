@@ -40,7 +40,7 @@ pitfalls.
    
 6. We click into our first file explorer window with
    ```C:\Users\YourUserName\AppData\Local\Programs```, and insert the copy
-   with ```Ctrl+v``` (i.e. ```C-v```).
+   with ```Ctrl```+```v``` (i.e. ```C-v```).
 7. We *rename* this subdirectory from ```Steel Bank Common Lisp``` to something like 
    ```sbcl-2.x``` (according to the downloaded version of SBCL).
 
