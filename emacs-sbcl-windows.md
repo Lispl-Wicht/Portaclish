@@ -297,7 +297,12 @@ Ok, and why an additional local copy of SBCL, again?
   uncomfortable time of tinkering with several variations. I am glad, that this was
   mentioned at Stackoverflow or so in a comment. It is also a good model for
   adding further *Common Lisp* implementations on Windows. It is only important,
-  that the pathnames are correctly modified to the own system (step 5 of the 6th section).
+  that the pathnames are correctly modified to the own system (step 5 of the 6th
+  section).
+* If this turns out to be a less favourable decision in general, it easily can
+  be modified: Just copy, or move the ```quicklisp``` subdirectory into the
+  *Windows* Home dir, and modify the ```#-quicklisp```-entry in ```.sbclrc```
+  correspondingly. 
 * But to use the subdirectory ```Local\Programs\sbcl-2.5``` has a big advantage
   anyway:  It is more convenient to change to that directory in the first place.
 * To keep the global installation allows to start it also from the start menu,
