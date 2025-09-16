@@ -304,6 +304,6 @@ Ok, and why an additional local copy of SBCL, again?
   which also could become convenient, if Emacs later will be connected to that
   instance as well.
 * *Git* by the way is not needed necessarily. But the ```init.el``` also uses the package
-  ```Magit``` the *Emacs* interface to *Git*.  And besides the future
+  ```Magit``` -- the *Emacs* interface to *Git*.  And so, besides the future
   convenience, the absence of *Git* would result in an unnecessary error message.
 
