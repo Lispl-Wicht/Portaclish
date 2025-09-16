@@ -108,7 +108,7 @@ Our shell now will look quite similar to this:
    
 ![Git](sbcl-local-programs-sbcl-git.png)
 
-## 4. Installing Quicklisp (also consider the README.md)
+## 4. Installing Quicklisp (also consider the [README.md](README.md))
 
 1. We download the file
    [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) and move it with
