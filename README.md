@@ -16,7 +16,11 @@ Meanwhile, [Shinmera](https://shinmera.com/) has advanced their own Emacs config
 For **beginners**, however, those configs may be overwhelming.  
 That’s why *this repo exists*: for pedagogical purposes and less advanced needs, as a **useful, portable starting point**.  
 
-The provided `init.el` is surely optimisable, but it works — at least on my system (Debian Linux 13). Packages are managed with `use-package`, and while this isn’t a full USB-stick-based environment, the configuration is portable between fixed installations on Linux, macOS, and Windows.  
+The provided `init.el` is surely optimisable, but it works — at least on my
+system (Debian Linux 13, and also on Windows 10, [as I figured
+out](emacs-sbcl-windows.md)). Packages are managed with `use-package`, and while
+this isn’t a full USB-stick-based environment, the configuration is portable
+between fixed installations on Linux, macOS, and Windows.   
 
 ---
 
