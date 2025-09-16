@@ -202,9 +202,9 @@ After executing that file, *Emacs* will be installed into
 ```C:\Program Files\Emacs\emacs-30.2\bin``` (look for the ```emacs-xx.x``` that fits in
    your case). 
    
-4. **Enter that directory**, and click the **file** ```emacs``` with the
-   **right** mouse button.  Choose "pin to the taskbar", and a starter icon is added to
-   the very taskbar.
+4. **Navigate to that directory** with the file explorer, and click the **file**
+   ```emacs``` with the **right** mouse button.  Choose "pin to the taskbar",
+   and a starter icon is added to the very taskbar.
    
 5. Now, start *Emacs* for the first time.
 
