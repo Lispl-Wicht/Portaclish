@@ -301,7 +301,7 @@ Ok, and why an additional local copy of SBCL, again?
   ```Magit````the *Emacs* interface to *Git*.  And besides the future
   convenience, the absence of *Git* would result in an unnecessary error message.
 * Finding the correct Windows path entries for SBCL needed quite an
-  uncomfortable of tinkering with several variations. I am glad, that this was
+  uncomfortable time of tinkering with several variations. I am glad, that this was
   mentioned at Stackoverflow or so in a comment. It is also a good model for
   adding further *Common Lisp* implementations on Windows. It is only important,
   that the pathnames are correctly modified to the own system (5. of the last section).
