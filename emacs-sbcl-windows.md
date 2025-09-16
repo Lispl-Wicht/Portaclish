@@ -21,7 +21,7 @@ pitfalls.
    and directories first.  Therefore, we click the ```View``` tab and check the
    ```Hidden items``` box.
    
-![Hidden items](view-hidden-items)
+![Hidden items](view-hidden-items.png)
    
 3. We now see in our ```C:\Users\YourUserName\``` directory the hidden directory
    ```AppData```.  (Please  look for *your* user name at your computer instead
@@ -164,7 +164,7 @@ After executing that file, *Emacs* will be installed into
    your case). 
    
 4. **Enter that directory**, and click the **file** ```emacs``` with the
-   **right** mouse button.  Choose "pin to the taskbar", and an starter icon is added to
+   **right** mouse button.  Choose "pin to the taskbar", and a starter icon is added to
    the very taskbar.
    
 5. Now, start *Emacs* for the first time.
@@ -218,7 +218,7 @@ C:\Users\YourUserName\AppData\Roaming\.emacs.d
    
    As you can see: *Emacs* handles ```/``` in windows pathnames as if they were
    ```\```.  So, in *Emacs* the Unix convention can be applied.  (If you insist
-   in using backslashes, you need *to mask* them with an additional one: ```\\```.
+   in using backslashes, you need *to mask* them with an additional one: ```\\```.)
 6. Now, save the file and exit.
 7. **Rename** the file into ```init.el``` within the file explorer.
 8. Start *Emacs* and wait.
