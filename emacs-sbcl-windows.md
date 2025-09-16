@@ -75,21 +75,15 @@ prompt with
 
 And we enter only the things that *follow* this prompt sign.
 
-3. We change into our future *Emacs home directory* by entering:
+
+4. In the current directory we enter:
 
 ```
->cd AppData\Roaming
-```
-
-4. In this directory we enter:
-
-```
->..\Local\Programs\sbcl-2.x\sbcl
+>Local\Programs\sbcl-2.x\sbcl
 ```
 
 **Notice:** 
 * Again: **Do not** enter the ```>```.
-* But: **Do** enter the leading two dots ```..```. 
 * Replace ```sbcl-2.x``` with the local sbcl directory name you chose
   above.
   
@@ -113,7 +107,11 @@ Our shell now will look quite similar to this:
 1. We download the file
    [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) and move it with
    our file explorer into ```C:\Users\YourUserName\AppData\Roaming```.
-2. **In our shell** we enter:
+2. **In our shell** we *change directory* (```cd```) correspondingly with:
+
+```
+>cd AppData\Roaming
+```
 
 ```
 >..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
@@ -138,11 +136,48 @@ Our shell now will look quite similar to this:
 * (ql:add-to-init-file)
 ```
 
-6. Finally, we quit SBCL again:
+6.We quit SBCL again:
 
 ```
 * (quit)
 ```
+
+7.At the *command prompt*, we enter this line
+
+```
+>copy .sbclrc ..\..
+```
+
+8. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
+   ```.sbclrc``` with the ```notepad``` editor.
+   
+The original content looks like this:
+
+```
+
+;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "quicklisp/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+```
+
+We modify the pathname after ```merge-pathname```, so that the whole expression
+looks like this:
+
+```
+
+;;; The following lines added by ql:add-to-init-file:
+#-quicklisp
+(let ((quicklisp-init (merge-pathnames "AppData/Roaming/quicklisp/setup.lisp"
+                                       (user-homedir-pathname))))
+  (when (probe-file quicklisp-init)
+    (load quicklisp-init)))
+```
+
+9. We save the file and exit ```notepad```.
+
 
 ## 5. Installing Emacs and starting it for the first time and adding a subdirectory
 
