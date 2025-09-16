@@ -267,3 +267,41 @@ search  in my personal Nemesis Windows) --
 the result should look similar to this, after a while of downloading and configuring:
 
 ![Emacs finished](Emacs-finished.png)
+
+## Final Notes
+
+What have we done?
+
+* The configuration file ```.sbclrc``` is searched by SBCL in the users
+  *Windows* Home directory, which is ```C:\Users\YourUserName```.  This
+  directory is the *return value* of the *Common Lisp* function
+  ```(user-homedir-pathname)```. -- If we want SBCL to load quicklisp 
+  at startup, this file needs to be there.
+* *Emacs* instead treats ```C:\Users\YourUserName\AppData\Roaming``` as Home. If
+  we work in that environment, it is more convenient if Quicklisp is also in the
+  *Emacs* Home dir. The *Quicklisp* library is installed in that directory in
+  which ```quicklisp.lisp``` is saved. And later ```(ql:add-to-init-file)```
+  also creates the ```.sbclrc``` there.
+* A simple solution is to change into the *Emacs* Home dir, let the installation
+  process take place there, move the generated .sbclrc to the *Windows* User
+  Home dir. And, to modify that configuration file so that it names the
+  *Quicklisp* installation in the *Emacs* Home dir.
+  
+Ok, and why an additional local copy of SBCL, again?
+
+* I did not find a way how to convince Emacs to handle pathnames that contain
+  space characters in the ```init.el```.  The suggested ideas with masked
+  backslashes did not work out. 
+* But to use the subdirectory ```Local\Programs\sbcl-2.5``` has a big advantage
+  anyway:  It is more convenient to change to that directory in the first place.
+* To keep the global installation allows to start it also from the start menu,
+  which also could become convenient, if Emacs later will be connected to that
+  instance as well.
+* *Git* is not needed necessarily. But the ```init.el``` also uses the package
+  ```Magit````the *Emacs* interface to *Git*.  And besides the future
+  convenience, the absence of *Git* would result in an unnecessary error message.
+* Finding the correct Windows path entries for SBCL needed quite an
+  uncomfortable of tinkering with several variations. I am glad, that this was
+  mentioned at Stackoverflow or so in a comment. It is also a good model for
+  adding further *Common Lisp* implementations on Windows. It is only important,
+  that the pathnames are correctly modified to the own system (5. of the last section).
