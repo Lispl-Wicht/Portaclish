@@ -98,7 +98,7 @@ And we enter only the things that *follow* this prompt sign.
    
 Our shell now will look quite similar to this:
 
-![command-shell](sbcl-in-cmd.ong)
+![command-shell](sbcl-in-cmd.png)
 
 ## 3. Installing Git
 
