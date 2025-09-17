@@ -108,12 +108,15 @@ On most systems ```curl```is preinstalled. If not:
 * Linux: distribution's package manager.
 * Windows: [download here](https://curl.se/windows/)
 
-### 4. Install Git (a frequently used version manager)
+### 4. Install Git, a popular Version Control System (VCS)
 
 * macOS: [MacPorts](https://ports.macports.org/port/git/),
   [Homebrew](https://formulae.brew.sh/formula/git).
 * Linux: distribution's package manager.
 * Windows: [download here](https://git-scm.com/download/win).
+
+About *Git*, see the excellent 
+[textbook]{https://github.com/progit/progit2/releases/download/2.1.448/progit.pdf}.
 
 ### 5. Install Quicklisp (the Common Lisp library manager)
 
