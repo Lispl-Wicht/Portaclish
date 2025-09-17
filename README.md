@@ -82,7 +82,7 @@ $ sbcl
 
 This starts the REPL (Read-Eval-Print-Loop) that looks similar to this:
 
-![REPL](sbcl-raw-REPL.png)
+![REPL](images/sbcl-raw-REPL.png)
 
 Enter your very first Lisp expression at the REPL prompt -- the blinking cursor
 after the Asterisk: 
@@ -203,7 +203,7 @@ Restart Emacs. It should:
 
 If everything worked, Emacs should look something like this:
 
-![Emacs](Emacs-start.png)
+![Emacs](images/Emacs-start.png)
 
 ---
 

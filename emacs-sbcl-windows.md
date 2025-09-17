@@ -21,7 +21,7 @@ pitfalls.
    and directories first.  Therefore, we click the ```View``` tab and check the
    ```Hidden items``` box.
    
-![Hidden items](view-hidden-items.png)
+![Hidden items](images/view-hidden-items.png)
    
 3. We now see in our ```C:\Users\YourUserName\``` directory the hidden directory
    ```AppData```.  (Please  look for *your* user name at your computer instead
@@ -29,14 +29,14 @@ pitfalls.
 4. Now, we navigate into the subdirectory
    ```C:\Users\YourUserName\AppData\Local\Programs```. 
    
-![local-empty](sbcl-local-programs-empty.png)
+![local-empty](images/sbcl-local-programs-empty.png)
    
 5. By pressing ```Ctrl```+```n``` (or in Emacs notation: ```C-n```), we open a new
    file explorer window. There, we navigate to ```C:\Program Files\Steel Bank
    Common Lisp```. And we *copy* that *directory* with ```Ctrl```+```c```
    (i.e. ```C-c```).
    
-![SBCL-global](sbcl-global.png)
+![SBCL-global](images/sbcl-global.png)
    
 6. We click into our first file explorer window with
    ```C:\Users\YourUserName\AppData\Local\Programs```, and insert the copy
@@ -44,7 +44,7 @@ pitfalls.
 7. We *rename* this subdirectory from ```Steel Bank Common Lisp``` to something like 
    ```sbcl-2.x``` (according to the downloaded version of SBCL).
 
-![SBCL-local](sbcl-local-programs-sbcl.png)
+![SBCL-local](images/sbcl-local-programs-sbcl.png)
 
 ## 2. Start the local SBCL from the *Emacs home directory*
 
@@ -58,7 +58,7 @@ pitfalls.
    *command prompt* -- also called *shell*, or *console*, or *terminal*.
    And then we click on the symbol that appears.
    
-![cmd call](cmd.png)
+![cmd call](images/cmd.png)
    
 2. The opened shell window should give us a prompt in *our* ```Users``` directory:
 
@@ -96,7 +96,7 @@ And we enter only the things that *follow* this prompt sign.
    
 Our shell now will look quite similar to this:
 
-![command-shell](sbcl-in-cmd.png)
+![command-shell](images/sbcl-in-cmd.png)
 
 ## 3. Installing Git
 
@@ -104,7 +104,7 @@ Our shell now will look quite similar to this:
 2. After installation, our ```C:\Users\YourUserName\AppData\Local\Programs```
    will look like this:
    
-![Git](sbcl-local-programs-sbcl-git.png)
+![Git](images/sbcl-local-programs-sbcl-git.png)
 
 ## 4. Installing Quicklisp (also consider the [README.md](README.md))
 
@@ -200,11 +200,11 @@ looks like this:
 2. On the FTP server, we may choose the subdirectory of the newest *Emacs*
    version:
    
-![Emacs newest directory](Emacs-newest-directory.png)
+![Emacs newest directory](images/Emacs-newest-directory.png)
 
 3. Within that directory, we may download the newest install file:
 
-![Emacs newest exe](Emacs-newest-exe.png)
+![Emacs newest exe](images/Emacs-newest-exe.png)
 
 After executing that file, *Emacs* will be installed into 
 ```C:\Program Files\Emacs\emacs-30.2\bin``` (look for the ```emacs-xx.x``` that fits in
@@ -232,7 +232,7 @@ After executing that file, *Emacs* will be installed into
    [repository](https://github.com/Lispl-Wicht/Portaclish/blob/main/init.el-windows).
 2. We click the download button, marked red below:
 
-![download](init_el-windows-download.png)
+![download](images/init_el-windows-download.png)
 3. With the file explorer, we move that file from our download directory into the
    *Emacs* configuration directory:
 
@@ -274,7 +274,7 @@ If everything works -- like it did in my case (after long hours of try, error an
 search  in my personal Nemesis Windows) --
 the result should look similar to this, after a while of downloading and configuring:
 
-![Emacs finished](Emacs-finished.png)
+![Emacs finished](images/Emacs-finished.png)
 
 ## Final Notes
 
