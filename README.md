@@ -180,7 +180,7 @@ Quit it with your **first Emacs keychord**: ```C-x C-c```
 Find the configuration directory:
 
 * Linux/Unix/macOS: ```~/.emacs.d```
-* Windows: ```C:\Users\<yourname>\AppData\Roaming\.emacs.d\``` 
+* Windows: ```C:\Users\YourUserName\AppData\Roaming\.emacs.d\``` 
 
 Inside ```.emacs.d``` create the subdirectory ```slime-contribs```.
 
