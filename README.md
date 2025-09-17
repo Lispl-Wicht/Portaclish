@@ -116,7 +116,9 @@ On most systems ```curl```is preinstalled. If not:
 * Windows: [download here](https://git-scm.com/download/win).
 
 About *Git*, see the excellent 
-[textbook](https://github.com/progit/progit2/releases/download/2.1.448/progit.pdf).
+[textbook](https://github.com/progit/progit2/releases/download/2.1.448/progit.pdf). 
+About *Magit*, its *Emacs* interface that is part of the the Portaclish flavour, see its 
+[manual](https://magit.vc/manual/magit.html).
 
 ### 5. Install Quicklisp (the Common Lisp library manager)
 
