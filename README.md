@@ -116,7 +116,7 @@ On most systems ```curl```is preinstalled. If not:
 * Windows: [download here](https://git-scm.com/download/win).
 
 About *Git*, see the excellent 
-[textbook]{https://github.com/progit/progit2/releases/download/2.1.448/progit.pdf}.
+[textbook](https://github.com/progit/progit2/releases/download/2.1.448/progit.pdf).
 
 ### 5. Install Quicklisp (the Common Lisp library manager)
 
