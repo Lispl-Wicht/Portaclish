@@ -189,7 +189,7 @@ Inside ```.emacs.d``` create the subdirectory ```slime-contribs```.
 * Put the provided ```init.el``` into ```~/.emacs.d/``` (***not***
   ```~/.emacs.d/slime-contribs```). 
 * 👉 **Windows users!!!** Take ```init.el-windows``` instead, rename it to ```init.el```
-  and **mind the [further steps](emacs-sbcl-windows.md).
+  and **mind** the [further steps](emacs-sbcl-windows.md).
 
 ### 8. Run Emacs with *portaclish* flavour:
 
