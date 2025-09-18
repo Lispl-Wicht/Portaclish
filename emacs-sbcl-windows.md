@@ -9,17 +9,93 @@ This guide is written with beginners in mind. Some explanations may feel overly
 detailed if you are experienced — but the extra clarity helps avoid common
 pitfalls. 
 
-## 1. Installing Git
+## 1. Installing Emacs, starting it for the first time, and adding a subdirectory
 
-1. We start with downloading [Git](https://git-scm.com/downloads/win).
+> **Note on prompts:**
+> In this guide, lines starting with ```>``` show the Windows command prompt.
+> Lines starting with ```*``` show the SBCL prompt.
+> Do not type the prompt symbol itself -- only what follows it.
+> (However, I will mention it again at the respective positions.)
+
+1. We either visit a 
+   [GNU Emacs FTP Mirror nearby](http://ftpmirror.gnu.org/emacs/windows) 
+   -- which is recommended. Or, if no mirror is available for a longer time, we
+   go to the 
+   [main FTP server](http://ftp.gnu.org/gnu/emacs/windows/) 
+   -- which often is slower.
+2. On the FTP server, we may choose the subdirectory of the newest *Emacs*
+   version:
+   
+![Emacs newest directory](images/Emacs-newest-directory.png)
+
+3. Within that directory, we may download the newest install file:
+
+![Emacs newest exe](images/Emacs-newest-exe.png)
+
+After executing that file, *Emacs* will be installed into 
+```C:\Program Files\Emacs\emacs-30.2\bin``` (look for the ```emacs-xx.x``` that fits in
+   your case). 
+   
+4. **Navigate to that directory** with the file explorer, and click the **file**
+   ```emacs``` with the **right** mouse button.  Choose "pin to the taskbar",
+   and a starter icon is added to the very taskbar.
+   
+5. Now, start *Emacs* for the first time.
+
+6. Close *Emacs* again (just click the *Emacs* window's close button in the
+   upper right corner, right now).
+   
+> **Notice:** By starting *Emacs* for the first time, the configuration
+> directory ```.emacs.d``` is created.
+
+7. We press the so-called "Windows" key. Now, we enter ```cmd``` for the
+   *command prompt* -- also called *shell*, or *console*, or *terminal*.
+   And then we click on the symbol that appears.
+   
+![cmd call](images/cmd.png)
+   
+8. The opened shell window should give us a prompt in *our* ```Users``` directory:
+
+```
+C:\Users\YourUserName>
+```
+
+After the ```>``` we enter our commands. That's why from now on I will indicate the
+prompt with:
+
+```
+>
+```
+
+**And we enter only the things that *follow* this prompt sign.**
+
+9. At that **command prompt** we *change directory* (cd) by entering this (press
+   the ```Return``` after you input the line):
+
+```
+>cd AppData\Roaming
+```
+
+10. Now, enter this command line at the prompt:
+
+```
+>mkdir .emacs.d\slime-contribs
+```
+
+> **Notice:** ```mkdir``` means "make directory". We just generated the
+> subdirectory ```slime-contribs```
+
+## 2. Installing Git
+
+1. We proceed with downloading [Git](https://git-scm.com/downloads/win).
 2. After installation, our ```C:\Users\YourUserName\AppData\Local\Programs```
    will look like this:
    
 ![Git](images/sbcl-local-programs-sbcl-git.png)
 
-## 2. Install Steel Bank Common Lisp (SBCL) and localise it
+## 3. Install Steel Bank Common Lisp (SBCL) and localise it
 
-1. We proceed with installing the ```.msi``` file of the latest sbcl version we
+1. It's time to install the ```.msi``` file of the latest sbcl version we
    [downloaded from here](https://sourceforge.net/projects/sbcl/files/sbcl). 
    This will extract the relevant files in 
    ```C:\Program Files\Steel Bank Common Lisp```. 
@@ -31,9 +107,10 @@ pitfalls.
    
 ![Hidden items](images/view-hidden-items.png)
    
-3. We now see in our ```C:\Users\YourUserName\``` directory the hidden directory
-   ```AppData```.  (Please  look for *your* user name at your computer instead
-   of the dummy ```YourUserName``` used here as a place holder.)
+3. In the file explorer, we now see in our ```C:\Users\YourUserName\```
+   directory the hidden directory ```AppData```.  (Please  look for *your* user
+   name at your computer instead of the dummy ```YourUserName``` used here as a
+   place holder.) 
 4. Now, we navigate into the subdirectory
    ```C:\Users\YourUserName\AppData\Local\Programs```. 
    
@@ -54,52 +131,26 @@ pitfalls.
 
 ![SBCL-local](images/sbcl-local-programs-sbcl.png)
 
-## 3. Start the local SBCL from the *Emacs home directory*
+## 4. Start the local SBCL from the *Emacs home directory*
 
-> **Note on prompts:**
-> In this guide, lines starting with ```>``` show the Windows command prompt.
-> Lines starting with ```*``` show the SBCL prompt.
-> Do not type the prompt symbol itself -- only what follows it.
-> (However, I will mention it again at the respective positions.)
-
-1. We press the so-called "Windows" key. Now, we enter ```cmd``` for the
-   *command prompt* -- also called *shell*, or *console*, or *terminal*.
-   And then we click on the symbol that appears.
-   
-![cmd call](images/cmd.png)
-   
-2. The opened shell window should give us a prompt in *our* ```Users``` directory:
+1. In the current directory we enter:
 
 ```
-C:\Users\YourUserName>
-```
-
-After the ```>``` we enter our commands. That's why from now on I will indicate the
-prompt with
-
-```
->
-```
-
-And we enter only the things that *follow* this prompt sign.
-
-
-4. In the current directory we enter:
-
-```
->AppData\Local\Programs\sbcl-2.x\sbcl
+>..\Local\Programs\sbcl-2.x\sbcl
 ```
 
 > **Notice:** 
 > * Again: **Do not** enter the ```>```.
 > * Replace ```sbcl-2.x``` with the local sbcl directory name you chose
 >   above.
-> * Calling the local ```sbcl``` like this works, because ```AppData``` is a subdirectory
->   of ```C:\Users\YourUserName```.  So, we can use the *relative* path from there, and
->   do not need to call the *full* path to ```sbcl```:
+> * Calling the local ```sbcl``` like this works, because we can use the
+>   *relative* path from the current directory.  With ```..\``` we tell the
+>   shell to move one directory up, from ```Roaming``` to ```AppData```. And
+>   from there, ```sbcl``` is found in the other subdirectory ```Local```.
+>   So, we do not need to call the *full* path to our local ```sbcl``` copy:
 >   ```C:\Users\YourUserName\AppData\Local\Programs\sbcl-2.x\sbcl```.
   
-5. At the appearing prompt **of SBCL** we enter ```(quit)``` and leave SBCL
+2. At the appearing prompt **of SBCL** we enter ```(quit)``` and leave SBCL
    again.
    
 Our shell now will look quite similar to this:
@@ -109,61 +160,60 @@ Our shell now will look quite similar to this:
 ## 4. Installing Quicklisp (also consider the [README.md](README.md))
 
 1. We download the file
-   [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) and move it with
-   our file explorer into ```C:\Users\YourUserName\AppData\Roaming```.
-2. **In our shell** we *change directory* (```cd```) correspondingly with:
+   [quicklisp.lisp](https://beta.quicklisp.org/quicklisp.lisp) into
+   ```C:\Users\YourUserName\AppData\Roaming```. 
 
-```
->cd AppData\Roaming
-```
-
-3. Then we start SBCL again with an argument (mind the dots at the beginning
-   and the ```--load``` option at the end):
+2. **In our shell**, we start SBCL again with an argument (mind the dots at the
+   beginning and the ```--load``` option at the end):
 
 ```
 >..\Local\Programs\sbcl-2.x\sbcl --load "quicklisp.lisp"
 ```
 
-> **Notice:** ```..\``` at the beginning of this call to ```sbcl``` means, that we move *one* level
-> up to ```AppData```, and from there we enter the other subdirectory ```Local``` again. 
-
-4. *At the SBCL prompt*, we enter (*after* the ```*```):
+3. *At the SBCL prompt*, we enter (*after* the ```*```):
 
 ```
 * (quicklisp-quickstart-install)
 ```
 
-5. After the installation is complete, we enter:
+4. After the completed installation, we enter:
 
 ```
 * (ql:quickload "quicklisp-slime-helper")
 ```
 
-6. After this process is finished, we ensure *Quicklisp* to be permanently
+5. After this process is finished, we ensure *Quicklisp* to be permanently
    loaded with SBCL:
    
 ```
 * (ql:add-to-init-file)
 ```
 
-7. We quit SBCL again:
+6. We quit SBCL again:
 
 ```
 * (quit)
 ```
 
-8. At the *command prompt*, we enter this line:
+7. At the *command prompt*, we enter this line:
 
 ```
->move .sbclrc ..\..
+>move ..\..\quicklisp .
 ```
-> **Notice:** The end of this line -- ```..\..``` -- means, that ```.sbclrc``` 
-> is ```move```d two levels up to ```C:\Users\YourUserName```.
 
-9. With the *file explorer*, we navigate to ```C:\Users\YourUserName``` and open
-   ```.sbclrc``` with the ```notepad``` editor.
+> **Notice:** ```..\..``` tells the shell to move two directories up in the tree
+> to ```C:\Users\YourUserName```. The final ```.``` of that line indicates the
+> *current* directory. So, this line ```moves``` the freshly generated directory
+> ```quicklisp``` into ```AppData\Roaming```.
+
+8. Now, we enter this at the *command prompt* (**mind all dots**):
+
+```
+>emacs ..\..\.sbclrc
+```
    
-The original content looks like this:
+*Emacs* opens for the second time and shows the original content of the
+newly generated SBCL configuration file:
 
 ```
 
@@ -188,43 +238,17 @@ looks like this:
     (load quicklisp-init)))
 ```
 
-10. We save the file and exit ```notepad```.
+9. We *save* the file with **our very first *Emacs key chord***: First, push
+    ```Ctrl```+```x```, then push ```Ctrl```+```s```. **In *Emacs* notation:**
+    ```C-x C-s```. You can just hold ```Ctrl``` constantly, and push ```x``` and
+    then ```s```.
+    
+    > **Notice:** If we enter the wrong key chord, we can just ```Quit```
+    > our input with **our very second *Emacs key chord**: ```C-g```. 
+    
+10. With **our very third *Emacs key chord***, we close our editor again: 
+    ```C-x C-c```.
 
-
-## 5. Installing Emacs, starting it for the first time, and adding a subdirectory
-
-1. We either visit a [GNU Emacs FTP Mirror
-   nearby](http://ftpmirror.gnu.org/emacs/windows) -- which is recommended. Or,
-   if no mirror is available for a longer time, we go to the [main FTP
-   server](http://ftp.gnu.org/gnu/emacs/windows/) -- which often is slower.
-2. On the FTP server, we may choose the subdirectory of the newest *Emacs*
-   version:
-   
-![Emacs newest directory](images/Emacs-newest-directory.png)
-
-3. Within that directory, we may download the newest install file:
-
-![Emacs newest exe](images/Emacs-newest-exe.png)
-
-After executing that file, *Emacs* will be installed into 
-```C:\Program Files\Emacs\emacs-30.2\bin``` (look for the ```emacs-xx.x``` that fits in
-   your case). 
-   
-4. **Navigate to that directory** with the file explorer, and click the **file**
-   ```emacs``` with the **right** mouse button.  Choose "pin to the taskbar",
-   and a starter icon is added to the very taskbar.
-   
-5. Now, start *Emacs* for the first time.
-
-6. Close *Emacs* again (just click the *Emacs* window's close button in the
-   upper right corner, right now).
-   
-7. At the **command prompt** enter this:
-
-```
->mkdir .emacs.d/slime-contribs
-```
- 
 ## 6. Configuring *Emacs* by downloading the portaclish ```init.el```
 
 1. We open the ```init.el-windows``` in
@@ -233,19 +257,24 @@ After executing that file, *Emacs* will be installed into
 2. We click the download button, marked red below:
 
 ![download](images/init_el-windows-download.png)
-3. With the file explorer, we move that file from our download directory into the
-   *Emacs* configuration directory:
+3. We download that file into the *Emacs* configuration directory:
 
 ```
 C:\Users\YourUserName\AppData\Roaming\.emacs.d
 ```
 
-4. We open this ```init.el-windows``` with the ```notepad``` editor, and push
-   ```Ctrl```+```f``` (```C-f```) to enter the following search string:
+4. **At the command prompt** we load that file with:
+
+   ```
+   >emacs .emacs.d/init.el-windows
+   ```
    
-   ```
-   Replace YourUserName
-   ```
+5. With **our very fourth *Emacs key chord*** ```C-s``` we invoke a *search* in
+   the bottom line of *Emacs*, the *minibuffer*. There we see the prompt:
+   
+   ```I-search:```
+   
+   We enter: ```Replace YourUserName``` and move to the searched string.
    
 5. We follow the instructions of the comments in lines 262--264:
 
@@ -263,12 +292,18 @@ C:\Users\YourUserName\AppData\Roaming\.emacs.d
             "c:/Users/yourUserName/AppData/local/Programs/sbcl-2.5/sbcl.core")))
    ```
    
-   As you can see: *Emacs* handles ```/``` in windows pathnames as if they were
+   As we can see: *Emacs* handles ```/``` in windows pathnames as if they were
    ```\```.  So, in *Emacs* the Unix convention can be applied.  (If you insist
    in using backslashes, you need *to mask* them with an additional one: ```\\```.)
-6. Now, save the file and exit.
-7. **Rename** the file into ```init.el``` within the file explorer.
-8. Start *Emacs* and wait.
+6. Now, we save the file with ```C-x C-s``` and exit again with ```C-x C-c```.
+7. **Back at the command prompt**, we rename ```init.el-windows``` to
+```init.el``` by entering this line:
+
+   ```
+   >ren .emacs.d/init.el-windows .emacs.d/init.el 
+   ```
+
+8. Ultimately, we start *Emacs* by clicking on its icon.
 
 If everything works -- like it did in my case (after long hours of try, error and
 search  in my personal Nemesis Windows) --
@@ -280,20 +315,17 @@ the result should look similar to this, after a while of downloading and configu
 
 What have we done?
 
-* The configuration file ```.sbclrc``` is searched by SBCL in the users
-  *Windows* Home directory, which is ```C:\Users\YourUserName```.  This
-  directory is the *return value* of the *Common Lisp* function
-  at startup, this file needs to be there.
+* The configuration file ```.sbclrc``` is searched by SBCL in the user's
+  directory ```C:\Users\YourUserName```.  This directory is the *return value*
+  of the *Common Lisp* function ```(user-homedir-pathname)``` at startup.  So,
+  this file needs to stay there. 
 * *Emacs* instead treats ```C:\Users\YourUserName\AppData\Roaming``` as Home. If
   we work in that environment, it is more convenient if Quicklisp is also in the
-  *Emacs* Home dir. The *Quicklisp* library is installed in that directory in
-  which ```quicklisp.lisp``` is saved. And later ```(ql:add-to-init-file)```
-  also creates the ```.sbclrc``` there.
-* A simple solution is to change into the *Emacs* Home dir, let the installation
-  process take place there, move the generated .sbclrc to the *Windows* User
-  Home dir. And, to modify that configuration file so that it names the
-  *Quicklisp* installation in the *Emacs* Home dir -- like we've did in the 4th
-  section step 9.
+  *Emacs* Home dir. But the *Quicklisp* library is installed in
+  ```C:\Users\YourUserName```.
+* A simple solution is to ```move``` the ```quicklisp``` directory into the
+  *Emacs* Home dir, and  modify ```.sbclrc``` correspondingly -- like we've did
+  in the 4th section, step 7-9.
 * If this turns out to be a less favourable decision in general, it easily can
   be modified: Just copy, or move the ```quicklisp``` subdirectory into the
   *Windows* Home dir, and modify the ```#-quicklisp```-entry in ```.sbclrc```
@@ -315,7 +347,9 @@ Ok, and why an additional local copy of SBCL, again?
 * To keep the global installation allows to start it also from the start menu,
   which also could become convenient, if Emacs later will be connected to that
   instance as well.
-* *Git* by the way is not needed necessarily. But the ```init.el``` also uses the package
-  ```Magit``` -- the *Emacs* interface to *Git*.  And so, besides the future
-  convenience, the absence of *Git* would result in an unnecessary error message.
+* *Git* by the way is not needed necessarily. But the ```init.el``` also uses
+  the package ```Magit``` -- the *Emacs* interface to *Git*.  And so, besides
+  the future convenience, the absence of *Git* would result in an unnecessary
+  error message.  And it creates ```Local\Programs```, which is a good place for
+  *Linux* like installations.
 
