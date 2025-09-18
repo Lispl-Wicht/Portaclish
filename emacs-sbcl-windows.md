@@ -9,9 +9,17 @@ This guide is written with beginners in mind. Some explanations may feel overly
 detailed if you are experienced — but the extra clarity helps avoid common
 pitfalls. 
 
-## 1. Install Steel Bank Common Lisp (SBCL) and localise it
+## 1. Installing Git
 
-1. We simply start by installing the ```.msi``` file of the latest sbcl version we
+1. We start with downloading [Git](https://git-scm.com/downloads/win).
+2. After installation, our ```C:\Users\YourUserName\AppData\Local\Programs```
+   will look like this:
+   
+![Git](images/sbcl-local-programs-sbcl-git.png)
+
+## 2. Install Steel Bank Common Lisp (SBCL) and localise it
+
+1. We proceed with installing the ```.msi``` file of the latest sbcl version we
    [downloaded from here](https://sourceforge.net/projects/sbcl/files/sbcl). 
    This will extract the relevant files in 
    ```C:\Program Files\Steel Bank Common Lisp```. 
@@ -46,7 +54,7 @@ pitfalls.
 
 ![SBCL-local](images/sbcl-local-programs-sbcl.png)
 
-## 2. Start the local SBCL from the *Emacs home directory*
+## 3. Start the local SBCL from the *Emacs home directory*
 
 > **Note on prompts:**
 > In this guide, lines starting with ```>``` show the Windows command prompt.
@@ -97,14 +105,6 @@ And we enter only the things that *follow* this prompt sign.
 Our shell now will look quite similar to this:
 
 ![command-shell](images/sbcl-in-cmd.png)
-
-## 3. Installing Git
-
-1. We download [Git](https://git-scm.com/downloads/win).
-2. After installation, our ```C:\Users\YourUserName\AppData\Local\Programs```
-   will look like this:
-   
-![Git](images/sbcl-local-programs-sbcl-git.png)
 
 ## 4. Installing Quicklisp (also consider the [README.md](README.md))
 
