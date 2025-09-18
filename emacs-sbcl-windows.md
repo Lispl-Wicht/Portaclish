@@ -76,7 +76,7 @@ prompt with:
 >cd AppData\Roaming
 ```
 
-> **Notice:** > Again: **Do not** enter the ```>```.
+> **Notice:** Again, **do not** enter the ```>```.
 
 10. Now, enter this command line at the prompt:
 
