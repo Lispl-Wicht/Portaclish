@@ -76,6 +76,8 @@ prompt with:
 >cd AppData\Roaming
 ```
 
+> **Notice:** > Again: **Do not** enter the ```>```.
+
 10. Now, enter this command line at the prompt:
 
 ```
@@ -137,7 +139,6 @@ be installed into: ```C:\Users\YourUserName\AppData\Local\Programs```
 ```
 
 > **Notice:** 
-> * Again: **Do not** enter the ```>```.
 > * Replace ```sbcl-2.x``` with the local sbcl directory name you chose
 >   above.
 > * Calling the local ```sbcl``` like this works, because we can use the
