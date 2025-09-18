@@ -244,7 +244,7 @@ looks like this:
     then ```s```.
     
     > **Notice:** If we enter the wrong key chord, we can just ```Quit```
-    > our input with **our very second *Emacs key chord**: ```C-g```. 
+    > our input with **our very second *Emacs key chord***: ```C-g```. 
     
 10. With **our very third *Emacs key chord***, we close our editor again: 
     ```C-x C-c```.
