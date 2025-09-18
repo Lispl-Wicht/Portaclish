@@ -87,12 +87,9 @@ prompt with:
 
 ## 2. Installing Git
 
-1. We proceed with downloading [Git](https://git-scm.com/downloads/win).
-2. After installation, our ```C:\Users\YourUserName\AppData\Local\Programs```
-   will look like this:
+We proceed with downloading [Git](https://git-scm.com/downloads/win).  This will
+be installed into: ```C:\Users\YourUserName\AppData\Local\Programs```
    
-![Git](images/sbcl-local-programs-sbcl-git.png)
-
 ## 3. Install Steel Bank Common Lisp (SBCL) and localise it
 
 1. It's time to install the ```.msi``` file of the latest sbcl version we
@@ -112,9 +109,9 @@ prompt with:
    name at your computer instead of the dummy ```YourUserName``` used here as a
    place holder.) 
 4. Now, we navigate into the subdirectory
-   ```C:\Users\YourUserName\AppData\Local\Programs```. 
+   ```C:\Users\YourUserName\AppData\Local\Programs```, that already contains ```Git```. 
    
-![local-empty](images/sbcl-local-programs-empty.png)
+![Git](images/sbcl-local-programs-sbcl-git.png)
    
 5. By pressing ```Ctrl```+```n``` (or in Emacs notation: ```C-n```), we open a new
    file explorer window. There, we navigate to ```C:\Program Files\Steel Bank
@@ -129,7 +126,7 @@ prompt with:
 7. We *rename* this subdirectory from ```Steel Bank Common Lisp``` to something like 
    ```sbcl-2.x``` (according to the downloaded version of SBCL).
 
-![SBCL-local](images/sbcl-local-programs-sbcl.png)
+![Git](images/sbcl-local-programs-sbcl-git.png)
 
 ## 4. Start the local SBCL from the *Emacs home directory*
 
