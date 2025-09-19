@@ -478,6 +478,13 @@
 (setq latex-run-command "pdflatex")
 (setq +latex-viewers '(evince))
 
+;;; -----------------
+;;; Alternative shell
+;;; -----------------
+;;  You start Windows cmd with: M-x shell
+;;  You start Windows PowerShell with: M-x powershell
+
+(use-package powershell :ensure t)
 
 ;;; ------------------------------
 ;;; Start Emacs as Common Lisp IDE
