@@ -489,7 +489,7 @@
 ;;; ------------------------------
 ;;; Start Emacs as Common Lisp IDE
 ;;; ------------------------------
-(cd "~/quicklisp/local-projects") ;; adjust it to your system
+(cd cl-projects) ;; CL-PROJECTS is defined at the top of this file
 (slime)
 (neotree)
 (other-window 1)
