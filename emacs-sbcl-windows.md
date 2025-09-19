@@ -153,7 +153,7 @@ be installed into: ```C:\Users\YourUserName\AppData\Local\Programs```
    
 Our shell now will look quite similar to this:
 
-![command-shell](images/sbcl-in-cmd.png)
+![command-shell](images/sbcl-in-cmd-orig.png)
 
 ## 4. Installing Quicklisp (also consider the [README.md](README.md))
 
