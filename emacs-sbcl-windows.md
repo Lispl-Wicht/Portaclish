@@ -298,7 +298,7 @@ C:\Users\YourUserName\AppData\Roaming\.emacs.d
 ```init.el``` by entering this line:
 
    ```
-   >ren .emacs.d/init.el-windows .emacs.d/init.el 
+   >ren .emacs.d\init.el-windows .emacs.d\init.el 
    ```
 
 8. Ultimately, we start *Emacs* by clicking on its icon.
