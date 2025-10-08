@@ -56,10 +56,6 @@ macOS users can also use:
 - [MacPorts](https://ports.macports.org/port/emacs/)  
 - [Homebrew](https://formulae.brew.sh/formula/emacs)  
 
-Windows users might also try the [Windows Subsystem for Linux
-(WSL)](https://learn.microsoft.com/en-us/windows/wsl/install) for smoother
-package management within Ubuntu or a Linux Distribution of your choice (if it works). 
-
 ---
 
 ### 2. Install a Common Lisp implementation
