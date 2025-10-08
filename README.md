@@ -231,4 +231,5 @@ If everything worked, Emacs should look something like this:
   community beyond Common Lisp integrates much more.
 * The lingering sound of [Lemonodor-fame](http://lemonodor.com/), I now
   discovered as I asked myself today (8 October 2025): "Btw, what actually *is*
-  'Lemonodor fame'?" A nice impression of the early 2000s Lisp community which created SLIME.
+  'Lemonodor'?" I thought of lemon scent, or something in Middle Earth? But it's a
+  nice impression of the early 2000s Lisp community which created SLIME.
