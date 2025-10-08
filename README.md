@@ -227,3 +227,6 @@ If everything worked, Emacs should look something like this:
   [Common Lisp language support for VS Code](https://marketplace.visualstudio.com/items?itemName=qingpeng.common-lisp).
 * Still, Emacs as the core IDE is not obsolete. Its long heritage and active
   community beyond Common Lisp integrates much more.
+* The lingering sound of [Lemonodor-fame](http://lemonodor.com/), I now
+  discovered as I asked myself today (8 October 2025): "Btw, what actually *is*
+  'Lemonodor fame'?" A nice impression of the early 2000s Lisp community which created SLIME.
