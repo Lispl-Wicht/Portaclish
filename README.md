@@ -220,7 +220,7 @@ If everything worked, Emacs should look something like this:
 * Upcoming: links to a YouTube tutorial series (Emacs + Common Lisp, later also
   JavaScript and LaTeX).
 * A friendly fork of SLIME can also be explored with
-  [SLY](https://github.com/joaotavora/sly)
+  [SLY](https://github.com/joaotavora/sly).
 * With experience in Emacs, a complete IDE written in Common Lisp, extendable
   in that language, usable like Emacs, and actively maintained can be explored
   and enjoyed with
