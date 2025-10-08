@@ -223,7 +223,7 @@ If everything worked, Emacs should look something like this:
   in that language, usable like Emacs, and actively maintained can be explored
   and enjoyed with
   [Lem](https://lem-project.github.io/).
-* Windows User might also consider the SLIME inspired
+* Windows Users might also consider the SLIME inspired
   [Common Lisp language support for VS Code](https://marketplace.visualstudio.com/items?itemName=qingpeng.common-lisp).
 * Still, Emacs as the core IDE is not obsolete. Its long heritage and active
   community beyond Common Lisp integrates much more.
