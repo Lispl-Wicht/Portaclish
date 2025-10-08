@@ -219,3 +219,11 @@ If everything worked, Emacs should look something like this:
   for real work. 
 * Upcoming: links to a YouTube tutorial series (Emacs + Common Lisp, later also
   JavaScript and LaTeX). 
+* With experience in Emacs, a complete IDE written in Common Lisp, extendable
+  in that language, usable like Emacs, and actively maintained can be explored
+  and enjoyed with
+  [Lem](https://lem-project.github.io/).
+* Windows User might also consider the SLIME inspired
+  [Common Lisp language support for VS Code](https://marketplace.visualstudio.com/items?itemName=qingpeng.common-lisp).
+* Still, Emacs as the core IDE is not obsolete. Its long heritage and active
+  community beyond Common Lisp integrates much more.
